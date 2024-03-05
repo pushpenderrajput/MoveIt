@@ -15,14 +15,12 @@
             height: 4rem;
             border-radius: 0.75rem;
         }
-    
-    
         #float-whatsapp {
             position: fixed;
             bottom: 20px;
             right: 20px;
-            width: 60px;
-            height: 60px;
+            width: 40px;
+            height: 40px;
             background-color: #25d366;
             border-radius: 50%;
             display: flex;
@@ -35,7 +33,26 @@
             width: 40px;
             height: 40px;
         }
+        #float-instagram {
+            position: fixed;
+            bottom: 70px;
+            right: 20px;
+            width: 40px;
+            height: 40px;
+            background-color: #25d366;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        #float-instagram img {
+            width: 40px;
+            height: 40px;
+        }
     </style>
+    <link href="styles.css" rel="stylesheet"/>
 
 </head>
 
@@ -54,26 +71,18 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link scrollto"  href="#home">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="#">About</a>
+                      <a class="nav-link scrollto" href="#About">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="#">Contact us</a>
+                      <a class="nav-link scrollto"  href="#gallery">Gallery</a>
+                  </li>
+                    <li class="nav-item">
+                        <a class="nav-link scrollto" href="#contact">Contact us</a>
                     </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            Services
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Flight</a></li>
-                            <li><a class="dropdown-item" href="#">Ship</a></li>
-                            <li><a class="dropdown-item" href="#">Roads</a></li>
-
-                        </ul>
-                    </li>
+                    
                     <div class="form-check form-switch nav-item mt-2">
                         <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
                         <label class="form-check-label" for="flexSwitchCheckDefault">Dark Mode</label>
@@ -90,13 +99,9 @@
             </div>
         </div>
     </nav>
-    <!--=======================================================floating whatsapp Button==================================================================================-->
-    <a id="float-whatsapp" href="https://wa.me/+917027768178" target="_blank">
-        <img src="img/whatsapp.png" alt="WhatsApp">
-    </a>
-    <!--=======================================================================================================================================================================-->
+    <section id="home" class="home">
     <div class=" container px-4 pt-5 my-5 text-center border-bottom">
-        <h1 class="display-4 fw-bold text-body-emphasis">Tirupati Movers and Packers,</h1>
+        <h1 class="display-4 fw-bold text-body-emphasis">Tirupati Packers and Movers</h1>
         <div class="col-lg-6 mx-auto">
             <p class="lead mb-4">"Experience seamless and reliable logistics services with our company. From efficient
                 transportation to expert
@@ -117,6 +122,8 @@
             </div>
         </div>
     </div>
+    </section>
+    <section id="About" class="About">
     <div class="container px-4 py-5" id="featured-3">
         <h2 class="pb-2 border-bottom">Why move with us?</h2>
         <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
@@ -149,338 +156,341 @@
             </div>
         </div>
     </div>
-    <section id="gallary" class="gallary">
-        <div class="container" data-aos="fade-up">
-          <div class="section-title">
-            <h2>Gallary</h2>
-            <p></p>
+    </section>
+    <section id="gallery" class="gallery">
+      <div class="container" data-aos="fade-up">
+        <div class="section-title">
+          <h2>Gallery</h2>
+          <p></p>
+        </div>
+
+        <div
+          class="row gallary-container"
+          data-aos="fade-up"
+          data-aos-delay="200"
+        >
+          <div class="col-lg-4 col-md-6 gallary-item filter-app">
+            <a
+            href="img/img.jpg.jpeg"
+            data-gallary="gallarryGallery"
+            class="gallary-lightbox"
+            ><div class="gallary-wrap">
+              <img
+                src="img/img.jpg.jpeg"
+                class="img-fluid"
+                alt=""
+              />
+              <div class="gallary-info">
+                
+              </div></a>
+            </div>
           </div>
 
-          <div
-            class="row gallary-container"
-            data-aos="fade-up"
-            data-aos-delay="200"
-          >
-            <div class="col-lg-4 col-md-6 gallary-item filter-app">
-              <a
-              href="img/img.jpg.jpeg"
-              data-gallary="gallarryGallery"
-              class="gallary-lightbox"
-              ><div class="gallary-wrap">
-                <img
-                  src="img/img.jpg.jpeg"
-                  class="img-fluid"
-                  alt=""
-                />
-                <div class="gallary-info">
-                  
-                </div></a>
-              </div>
+          <div class="col-lg-4 col-md-6 gallary-item filter-web">
+            <a
+                    href="img/img1.jpg.jpeg"
+                    data-gallary="gallaryGallery"
+                    class="gallary-lightbox"
+                    >
+                    <div class="gallary-wrap">
+              <img
+                src="img/img1.jpg.jpeg"
+                class="img-fluid"
+                alt=""
+              />
+              <div class="gallary-info">
+                
+              </div></a>
             </div>
+          </div>
 
-            <div class="col-lg-4 col-md-6 gallary-item filter-web">
-              <a
-                      href="img/img1.jpg.jpeg"
-                      data-gallary="gallaryGallery"
-                      class="gallary-lightbox"
-                      >
-                      <div class="gallary-wrap">
-                <img
-                  src="img/img1.jpg.jpeg"
-                  class="img-fluid"
-                  alt=""
-                />
-                <div class="gallary-info">
-                  
-                </div></a>
-              </div>
+          <div class="col-lg-4 col-md-6 gallary-item filter-app">
+            <a
+            href="img/img2.jpg.jpeg"
+            data-gallary="gallaryGallery"
+            class="gallary-lightbox"
+            > <div class="gallary-wrap">
+              <img
+                src="img/img2.jpg.jpeg"
+                class="img-fluid"
+                alt=""
+              />
+              <div class="gallary-info">
+                
+              </div></a>
             </div>
+          </div>
 
-            <div class="col-lg-4 col-md-6 gallary-item filter-app">
-              <a
-              href="img/img2.jpg.jpeg"
-              data-gallary="gallaryGallery"
-              class="gallary-lightbox"
-              > <div class="gallary-wrap">
-                <img
-                  src="img/img2.jpg.jpeg"
-                  class="img-fluid"
-                  alt=""
-                />
-                <div class="gallary-info">
-                  
-                </div></a>
-              </div>
+          <div class="col-lg-4 col-md-6 gallary-item filter-card">
+            <a
+                    href="img/img3.jpg.jpeg"
+                    data-gallary="gallarygallary"
+                    class="gallary-lightbox"
+                    ><div class="gallary-wrap">
+              <img
+                src="img/img3.jpg.jpeg"
+                class="img-fluid"
+                alt=""
+              />
+              <div class="gallary-info">
+                
+              </div></a>
             </div>
+          </div>
 
-            <div class="col-lg-4 col-md-6 gallary-item filter-card">
-              <a
-                      href="img/img3.jpg.jpeg"
-                      data-gallary="gallarygallary"
-                      class="gallary-lightbox"
-                      ><div class="gallary-wrap">
-                <img
-                  src="img/img3.jpg.jpeg"
-                  class="img-fluid"
-                  alt=""
-                />
-                <div class="gallary-info">
-                  
-                </div></a>
-              </div>
+          <div class="col-lg-4 col-md-6 gallary-item filter-web">
+            <a
+                    href="img/img4.jpg.jpeg"
+                    data-gallary="gallarygallary"
+                    class="gallary-lightbox"
+                    ><div class="gallary-wrap">
+              <img
+                src="img/img4.jpg.jpeg"
+                class="img-fluid"
+                alt=""
+              />
+              <div class="gallary-info">
+                
+              </div></a>
             </div>
+          </div>
 
-            <div class="col-lg-4 col-md-6 gallary-item filter-web">
-              <a
-                      href="img/img4.jpg.jpeg"
-                      data-gallary="gallarygallary"
-                      class="gallary-lightbox"
-                      ><div class="gallary-wrap">
-                <img
-                  src="img/img4.jpg.jpeg"
-                  class="img-fluid"
-                  alt=""
-                />
-                <div class="gallary-info">
-                  
-                </div></a>
-              </div>
+          <div class="col-lg-4 col-md-6 gallary-item filter-app">
+            <a
+                    href="img/img5.jpg.jpeg"
+                    data-gallary="gallarygallary"
+                    class="gallary-lightbox"
+                    
+                    ><div class="gallary-wrap">
+              <img
+                src="img/img5.jpg.jpeg"
+                class="img-fluid"
+                alt=""
+              />
+              <div class="gallary-info">
+                
+              </div></a>
             </div>
+          </div>
 
-            <div class="col-lg-4 col-md-6 gallary-item filter-app">
-              <a
-                      href="img/img5.jpg.jpeg"
-                      data-gallary="gallarygallary"
-                      class="gallary-lightbox"
-                      
-                      ><div class="gallary-wrap">
-                <img
-                  src="img/img5.jpg.jpeg"
-                  class="img-fluid"
-                  alt=""
-                />
-                <div class="gallary-info">
-                  
-                </div></a>
-              </div>
+          <div class="col-lg-4 col-md-6 gallary-item filter-app">
+            <a
+                    href="img/img6.jpg.jpeg"
+                    data-gallary="gallarygallary"
+                    class="gallary-lightbox"
+                    
+                    ><div class="gallary-wrap">
+              <img
+                src="img/img6.jpg.jpeg"
+                class="img-fluid"
+                alt=""
+              />
+              <div class="gallary-info">
+                
+              </div></a>
             </div>
+          </div>
 
-            <div class="col-lg-4 col-md-6 gallary-item filter-app">
-              <a
-                      href="img/img6.jpg.jpeg"
-                      data-gallary="gallarygallary"
-                      class="gallary-lightbox"
-                      
-                      ><div class="gallary-wrap">
-                <img
-                  src="img/img6.jpg.jpeg"
-                  class="img-fluid"
-                  alt=""
-                />
-                <div class="gallary-info">
-                  
-                </div></a>
-              </div>
+          <div class="col-lg-4 col-md-6 gallary-item filter-card">
+            <a
+                    href="img/img7.jpg.jpeg"
+                    data-gallary="gallarygallary"
+                    class="gallary-lightbox"
+                    ><div class="gallary-wrap">
+              <img
+                src="img/img7.jpg.jpeg"
+                class="img-fluid"
+                alt=""
+              />
+              <div class="gallary-info">
+                
+              </div></a>
             </div>
+          </div>
 
-            <div class="col-lg-4 col-md-6 gallary-item filter-card">
-              <a
-                      href="img/img7.jpg.jpeg"
-                      data-gallary="gallarygallary"
-                      class="gallary-lightbox"
-                      ><div class="gallary-wrap">
-                <img
-                  src="img/img7.jpg.jpeg"
-                  class="img-fluid"
-                  alt=""
-                />
-                <div class="gallary-info">
-                  
-                </div></a>
-              </div>
+          <div class="col-lg-4 col-md-6 gallary-item filter-web">
+            <a
+                    href="img/img8.jpg.jpeg"
+                    data-gallary="gallarygallary"
+                    class="gallary-lightbox"
+                    ><div class="gallary-wrap">
+              <img
+                src="img/img8.jpg.jpeg"
+                class="img-fluid"
+                alt=""
+              />
+              <div class="gallary-info">
+                
+              </div></a>
             </div>
-
-            <div class="col-lg-4 col-md-6 gallary-item filter-web">
-              <a
-                      href="img/img8.jpg.jpeg"
-                      data-gallary="gallarygallary"
-                      class="gallary-lightbox"
-                      ><div class="gallary-wrap">
-                <img
-                  src="img/img8.jpg.jpeg"
-                  class="img-fluid"
-                  alt=""
-                />
-                <div class="gallary-info">
-                  
-                </div></a>
-              </div>
+          </div>
+          <div class="col-lg-4 col-md-6 gallary-item filter-web">
+            <a
+                    href="img/img9.jpg.jpeg"
+                    data-gallary="gallarygallary"
+                    class="gallary-lightbox"
+                    ><div class="gallary-wrap">
+              <img
+                src="img/img9.jpg.jpeg"
+                class="img-fluid"
+                alt=""
+              />
+              <div class="gallary-info">
+                
+              </div></a>
             </div>
-            <div class="col-lg-4 col-md-6 gallary-item filter-web">
-              <a
-                      href="img/img9.jpg.jpeg"
-                      data-gallary="gallarygallary"
-                      class="gallary-lightbox"
-                      ><div class="gallary-wrap">
-                <img
-                  src="img/img9.jpg.jpeg"
-                  class="img-fluid"
-                  alt=""
-                />
-                <div class="gallary-info">
-                  
-                </div></a>
-              </div>
+          </div>
+          <div class="col-lg-4 col-md-6 gallary-item filter-web">
+            <a
+                    href="img/img10.jpg.jpeg"
+                    data-gallary="gallarygallary"
+                    class="gallary-lightbox"
+                    ><div class="gallary-wrap">
+              <img
+                src="img/img10.jpg.jpeg"
+                class="img-fluid"
+                alt=""
+              />
+              <div class="gallary-info">
+                
+              </div></a>
             </div>
-            <div class="col-lg-4 col-md-6 gallary-item filter-web">
-              <a
-                      href="img/img10.jpg.jpeg"
-                      data-gallary="gallarygallary"
-                      class="gallary-lightbox"
-                      ><div class="gallary-wrap">
-                <img
-                  src="img/img10.jpg.jpeg"
-                  class="img-fluid"
-                  alt=""
-                />
-                <div class="gallary-info">
-                  
-                </div></a>
-              </div>
+          </div>
+          <div class="col-lg-4 col-md-6 gallary-item filter-web">
+            <a
+                    href="assets/img/gallary/IMG_6345.jpg"
+                    data-gallary="gallarygallary"
+                    class="gallary-lightbox"
+                    ><div class="gallary-wrap">
+              <img
+                src="assets/img/gallary/IMG_6345.jpg"
+                class="img-fluid"
+                alt=""
+              />
+              <div class="gallary-info">
+                
+              </div></a>
             </div>
-            <div class="col-lg-4 col-md-6 gallary-item filter-web">
-              <a
-                      href="assets/img/gallary/IMG_6345.jpg"
-                      data-gallary="gallarygallary"
-                      class="gallary-lightbox"
-                      ><div class="gallary-wrap">
-                <img
-                  src="assets/img/gallary/IMG_6345.jpg"
-                  class="img-fluid"
-                  alt=""
-                />
-                <div class="gallary-info">
-                  
-                </div></a>
-              </div>
+          </div>
+          <div class="col-lg-4 col-md-6 gallary-item filter-web">
+            <a
+                    href="assets/img/gallary/IMG_6342.jpg"
+                    data-gallary="gallarygallary"
+                    class="gallary-lightbox"
+                    ><div class="gallary-wrap">
+              <img
+                src="assets/img/gallary/IMG_6342.jpg"
+                class="img-fluid"
+                alt=""
+              />
+              <div class="gallary-info">
+                
+              </div> </a>
             </div>
-            <div class="col-lg-4 col-md-6 gallary-item filter-web">
-              <a
-                      href="assets/img/gallary/IMG_6342.jpg"
-                      data-gallary="gallarygallary"
-                      class="gallary-lightbox"
-                      ><div class="gallary-wrap">
-                <img
-                  src="assets/img/gallary/IMG_6342.jpg"
-                  class="img-fluid"
-                  alt=""
-                />
-                <div class="gallary-info">
-                  
-                </div> </a>
-              </div>
+          </div>
+          <div class="col-lg-4 col-md-6 gallary-item filter-web">
+            <a
+                    href="assets/img/gallary/IMG_6343.jpg"
+                    data-gallary="gallarygallary"
+                    class="gallary-lightbox"
+                    ><div class="gallary-wrap">
+              <img
+                src="assets/img/gallary/IMG_6343.jpg"
+                class="img-fluid"
+                alt=""
+              />
+              <div class="gallary-info">
+                
+              </div></a>
             </div>
-            <div class="col-lg-4 col-md-6 gallary-item filter-web">
-              <a
-                      href="assets/img/gallary/IMG_6343.jpg"
-                      data-gallary="gallarygallary"
-                      class="gallary-lightbox"
-                      ><div class="gallary-wrap">
-                <img
-                  src="assets/img/gallary/IMG_6343.jpg"
-                  class="img-fluid"
-                  alt=""
-                />
-                <div class="gallary-info">
-                  
-                </div></a>
-              </div>
+          </div>
+          <div class="col-lg-4 col-md-6 gallary-item filter-web">
+            <a
+                    href="assets/img/gallary/gallary-2.jpeg"
+                    data-gallary="gallarygallary"
+                    class="gallary-lightbox"
+                    ><div class="gallary-wrap">
+              <img
+                src="assets/img/gallary/gallary-2.jpeg"
+                class="img-fluid"
+                alt=""
+              />
+              <div class="gallary-info">
+                
+              </div></a>
             </div>
-            <div class="col-lg-4 col-md-6 gallary-item filter-web">
-              <a
-                      href="assets/img/gallary/gallary-2.jpeg"
-                      data-gallary="gallarygallary"
-                      class="gallary-lightbox"
-                      ><div class="gallary-wrap">
-                <img
-                  src="assets/img/gallary/gallary-2.jpeg"
-                  class="img-fluid"
-                  alt=""
-                />
-                <div class="gallary-info">
-                  
-                </div></a>
-              </div>
+          </div>
+          <div class="col-lg-4 col-md-6 gallary-item filter-web">
+            <a
+                    href="assets/img/gallary/gallary-10.png"
+                    data-gallary="gallarygallary"
+                    class="gallary-lightbox"
+                    ><div class="gallary-wrap">
+              <img
+                src="assets/img/gallary/gallary-10.png"
+                class="img-fluid"
+                alt=""
+              />
+              <div class="gallary-info">
+                
+              </div> </a>
             </div>
-            <div class="col-lg-4 col-md-6 gallary-item filter-web">
-              <a
-                      href="assets/img/gallary/gallary-10.png"
-                      data-gallary="gallarygallary"
-                      class="gallary-lightbox"
-                      ><div class="gallary-wrap">
-                <img
-                  src="assets/img/gallary/gallary-10.png"
-                  class="img-fluid"
-                  alt=""
-                />
-                <div class="gallary-info">
-                  
-                </div> </a>
-              </div>
+          </div>
+          <div class="col-lg-4 col-md-6 gallary-item filter-web">
+            <a
+                    href="assets/img/gallary/gallary-11.jpeg"
+                    data-gallary="gallarygallary"
+                    class="gallary-lightbox"
+                    ><div class="gallary-wrap">
+              <img
+                src="assets/img/gallary/gallary-11.jpeg"
+                class="img-fluid"
+                alt=""
+              />
+              <div class="gallary-info">
+                
+              </div></a>
             </div>
-            <div class="col-lg-4 col-md-6 gallary-item filter-web">
-              <a
-                      href="assets/img/gallary/gallary-11.jpeg"
-                      data-gallary="gallarygallary"
-                      class="gallary-lightbox"
-                      ><div class="gallary-wrap">
-                <img
-                  src="assets/img/gallary/gallary-11.jpeg"
-                  class="img-fluid"
-                  alt=""
-                />
-                <div class="gallary-info">
-                  
-                </div></a>
-              </div>
+          </div>
+          <div class="col-lg-4 col-md-6 gallary-item filter-web">
+            <a
+                    href="assets/img/gallary/gallary-12.jpeg"
+                    data-gallary="gallarygallary"
+                    class="gallary-lightbox"
+                    ><div class="gallary-wrap">
+              <img
+                src="assets/img/gallary/gallary-12.jpeg"
+                class="img-fluid"
+                alt=""
+              />
+              <div class="gallary-info">
+               
+              </div></a>
             </div>
-            <div class="col-lg-4 col-md-6 gallary-item filter-web">
-              <a
-                      href="assets/img/gallary/gallary-12.jpeg"
-                      data-gallary="gallarygallary"
-                      class="gallary-lightbox"
-                      ><div class="gallary-wrap">
-                <img
-                  src="assets/img/gallary/gallary-12.jpeg"
-                  class="img-fluid"
-                  alt=""
-                />
-                <div class="gallary-info">
-                 
-                </div></a>
-              </div>
+          </div>
+          <div class="col-lg-4 col-md-6 gallary-item filter-web">
+            <a
+                    href="assets/img/gallary/last.jpeg"
+                    data-gallary="gallarygallary"
+                    class="gallary-lightbox"
+                    ><div class="gallary-wrap">
+              <img
+                src="assets/img/gallary/last.jpeg"
+                class="img-fluid"
+                alt=""
+              />
+              <div class="gallary-info">
+                
+              </div></a>
             </div>
-            <div class="col-lg-4 col-md-6 gallary-item filter-web">
-              <a
-                      href="assets/img/gallary/last.jpeg"
-                      data-gallary="gallarygallary"
-                      class="gallary-lightbox"
-                      ><div class="gallary-wrap">
-                <img
-                  src="assets/img/gallary/last.jpeg"
-                  class="img-fluid"
-                  alt=""
-                />
-                <div class="gallary-info">
-                  
-                </div></a>
-              </div>
-    </div>
-    </div>
+  </div>
+  </div>
 </div>
-        <!--==============================================================Happy Customers Section===================================================================-->
-<section id="testimonials" class="testimonials">
-        <h1>Our Happy Custromers</h1>
+</section>
+      <!--==========================================================================-->
+      <h1>Our Happy Customers</h1>
+      <section id="testimonials" class="testimonials">
+        <h1></h1>
         <div class="container" data-aos="zoom-in">
   
           <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
@@ -488,7 +498,7 @@
   
               <div class="swiper-slide">
                 <div class="testimonial-item">
-                  
+                  <img src="assets/img/testimonials/ceo.png" class="testimonial-img" alt="">
                   <h3>Bhupender Rajput</h3>
                   <h4></h4>
                   <p>
@@ -571,7 +581,7 @@ If any body wants to move to another place then this is best choice for you.
               </div>
               <div class="swiper-slide">
                 <div class="testimonial-item">
-                  
+                  <img src="assets/img/testimonials/hodme.jpeg" class="testimonial-img" alt="">
                   <h3>Mr. Manish Kaushik</h3>
                   <h4></h4>
                   <p>
@@ -597,16 +607,54 @@ I Will Recommend this Company in future
                   </p>
                 </div>
               </div>
+              <!--div class="swiper-slide">
+                <div class="testimonial-item">
+                  <img src="assets/img/testimonials/technical.jpeg" class="testimonial-img" alt="">
+                  <h3>Mr. Vishal Mittal</h3>
+                  <h4>HOD EE</h4>
+                  <p>
+                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                    YUGANTAR represents the spirit of excellence and collaboration that defines our college, bringing together individuals from all backgrounds to celebrate success.
+                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                  </p>
                 </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <img src="assets/img/testimonials/hodapplied.jpeg" class="testimonial-img" alt="">
+                  <h3>Mr. Sumit Saini</h3>
+                  <h4>HOD Applied Science</h4>
+                  <p>
+                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                    : YUGANTAR embodies the spirit of innovation and discovery within our college, inspiring students and faculty to explore new ideas and push the boundaries of knowledge.
+                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <img src="assets/img/testimonials/ravinder.jpg" class="testimonial-img" alt="">
+                  <h3>Mr. Ravinder Kumar</h3>
+                  <h4>HOD Management</h4>
+                  <p>
+                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                    YUGANTAR fosters a sense of community and belonging within our college, providing a platform for students and faculty to come together and celebrate their achievements.
+                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                  </p>
+                </div>
+              </div-->
+              
+              
+              
+
+
+            </div>
             <div class="swiper-pagination"></div>
           </div>
   
         </div>
-      
-            </section>
-        
-        <!--========================================================================================================================================================-->
       </section>
+      <!--==========================================================================-->      
       <section id="contact" class="contact">
         <div class="container" data-aos="fade-up">
           <div class="section-title">
@@ -647,8 +695,19 @@ I Will Recommend this Company in future
               </div>
             </div>
 
+             <!--=======================================================floating whatsapp Button==================================================================================-->
+    <a id="float-whatsapp" href="https://wa.me/+917027768178" target="_blank">
+      <img src="img/whatsapp.png" alt="WhatsApp">
+  </a>
+  <!--=======================================================================================================================================================================-->
+  <!--=======================================================floating instagram Button==================================================================================-->
+  <a id="float-instagram" href="https://www.instagram.com/tirupati_box_and_move_?igsh=MTBpa3dic2xjNzk5MQ==" target="_blank">
+    <img src="img/instagram.png" alt="instagram">
+</a>
+<!--=======================================================================================================================================================================-->
 
 
+    <section id="contact" class="contact">
     <div class="container col-lg-6 mx-auto">
 
         <br>
@@ -685,6 +744,7 @@ I Will Recommend this Company in future
             <button type="submit" class="btn btn-primary">Submit</button>
           </form>
     </div>
+    </section>
     <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
         <div class="col-md-4 d-flex align-items-center text-center
             <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
