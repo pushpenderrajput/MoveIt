@@ -104,3 +104,10 @@
       width: 80%;
     }
   }
+
+  .grey-bg {
+    background-color: #d9d9d9;
+    padding: 1rem;
+    width: 100%;
+    justify-content: center; /* Add some padding for a better appearance */
+}
